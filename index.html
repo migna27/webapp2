@@ -4,21 +4,22 @@
         <title>MI WEB APP</title> 
         <link rel="icon" href="resource/favicon.ico">
         <link rel ="stylesheet" href="resource/styles.css">
+        <script src="resource/script.js" defer></script>
     </head> 
     <body> 
         <header>   
             <!-- a significa anchor (ancla) -->
-        <a>Inicio</a>   
-        <a>Otra pagina</a> 
+        <a href="index.html">Inicio</a>   
+        <a href="math.html">Math</a> 
         </header>
 
         <main>  
             <div>   
                 <!-- etiqueta p significa parrafo -->
                 <p>Escribe tu nombre.</p>
-                <input class="input-welcome" type="text" placeholder="Tu nombre">
-                
-                <button class="button-ok">aceptar</button>
+                <input class="input-welcome" type="text" placeholder="Tu nombre", id="input-name">
+            
+                <button class="button-ok", id="btn-OK">aceptar</button>
             </div>
         </main>
         <footer>   
