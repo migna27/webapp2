@@ -25,16 +25,82 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         var sum = value1 + value2;
-        var resta = value1 - value2;
-        var multiplicacion = value1 * value2;
-        var division = value1 / value2;
-
+        
         alert("La suma de " + value1 + " y " + value2 + " es: " + sum);
         console.log("Se imprimio la alerta");
         console.error("Esto es un error simulado");
         console.warn("Esto es una advertencia simulada");
+    });
+
+    var btnOK = document.getElementById("btn-restar");
+    // declaracion del evento click del boton
+    btnOK.addEventListener("click", function() {
+        //delcaramos una variable que representa el input en HTML
+        var value1 = parseFloat(document.getElementById("input-value1").value);
+      
+       // var value1number = parseFloat(value1);
+
+        var value2 = parseFloat(document.getElementById("input-value2").value);
+        
+  
+        if (isNaN(value1) || isNaN(value2)) {
+            alert("Por favor ingrese numeros validos en ambos campos.");
+            //console son mensajes para el desarrollador
+            console.error("Error: Uno o ambos valores no son numeros validos.");
+            return;
+        }
+
+        var resta = value1 - value2;
+        
+
         alert("La resta de " + value1 + " y " + value2 + " es: " + resta);
+    });
+
+    var btnOK = document.getElementById("btn-multiplicar");
+    // declaracion del evento click del boton
+    btnOK.addEventListener("click", function() {
+        //delcaramos una variable que representa el input en HTML
+        var value1 = parseFloat(document.getElementById("input-value1").value);
+      
+       // var value1number = parseFloat(value1);
+
+        var value2 = parseFloat(document.getElementById("input-value2").value);
+        
+  
+        if (isNaN(value1) || isNaN(value2)) {
+            alert("Por favor ingrese numeros validos en ambos campos.");
+            //console son mensajes para el desarrollador
+            console.error("Error: Uno o ambos valores no son numeros validos.");
+            return;
+        }
+
+        var multiplicacion = value1 * value2;
+        
+
         alert("La multiplicacion de " + value1 + " y " + value2 + " es: " + multiplicacion);
+    });
+
+    var btnOK = document.getElementById("btn-dividir");
+    // declaracion del evento click del boton
+    btnOK.addEventListener("click", function() {
+        //delcaramos una variable que representa el input en HTML
+        var value1 = parseFloat(document.getElementById("input-value1").value);
+      
+       // var value1number = parseFloat(value1);
+
+        var value2 = parseFloat(document.getElementById("input-value2").value);
+        
+  
+        if (isNaN(value1) || isNaN(value2)) {
+            alert("Por favor ingrese numeros validos en ambos campos.");
+            //console son mensajes para el desarrollador
+            console.error("Error: Uno o ambos valores no son numeros validos.");
+            return;
+        }
+
+        var division = value1 / value2;
+        
+
         alert("La division de " + value1 + " y " + value2 + " es: " + division);
     });
 });
