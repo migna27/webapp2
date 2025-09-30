@@ -5,21 +5,20 @@ html, body{
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    background-color: rgb(57, 57, 57);
+    background-color: rgb(62, 81, 88);
 }
 
 header{
-    background-color: #d8bdbd;
+    background-color: #201e1e;
     text-align:left;
     padding:15px;
    
 }
 
 header a{
-    color: #5a0752;
-    /** el primer valor aplica para top bottom, y el segundo para left right**//
-    margin:15px;
-    text-decoration: none;
+    color: #e8cce5;
+    /* el primer valor aplica para top bottom, y el segundo para left right */
+    margin: 15px;
     font-weight: bold;
 }
 
@@ -30,7 +29,7 @@ main{
 }
 
 main p{
-    color: rgb(89, 17, 17);
+    color: rgb(141, 137, 137);
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -41,12 +40,14 @@ width: 200px;
 margin-bottom: 20px;
 }
 
-.button-ok{
-padding: 10px 20px;
-background-color: #271c74;
-color:aliceblue
-cursor: pointer;
-
+.button-ok {
+  padding: 10px 20px;
+  background-color: #730768;
+  color: aliceblue; 
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 footer{
